@@ -11,6 +11,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --blanco-bns: #dedfdd;
+  --azul-bns: #1d5d77;
+  --amarillo-bns: #C6AE51;
+}
+
+*{
+  box-sizing: border-box;
+  border-style: solid;
 }
 
 a {
@@ -28,4 +37,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
+  background: var(--blanco-bns);
 }
