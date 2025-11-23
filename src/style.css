@@ -40,3 +40,21 @@ body {
   
   background: var(--blanco-bns);
 }
+
+#container-bns{
+  @apply grid grid-rows-1 pt-10;
+  
+  #tecnologias{
+    @apply flex justify-center gap-3.5 py-10;
+    /* background-color: var(--amarillo-bns); */
+
+    .technology{
+      width: 45px;
+      transition: transform .3s;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+}
