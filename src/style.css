@@ -48,10 +48,11 @@ body {
   grid-template-areas:
     "nombre"
     "proyecto-estrella"
+    "capturas"
     "proyectos"
     "tecnologias"
-    "capturas"
-    ;
+    "contacto"
+  ;
   /* gap: 1rem; */
 
   #nombre{
