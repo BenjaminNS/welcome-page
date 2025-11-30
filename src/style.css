@@ -93,4 +93,10 @@ body {
       }
     }
   }
+  #contacto{
+    @apply p-5 flex flex-col justify-center items-center text-center;
+    grid-area: contacto;
+    background: var(--azul-bns);
+    /* color: black; */
+  }
 }
