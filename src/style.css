@@ -14,9 +14,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* Colores */
   --blanco-bns: #dedfdd;
   --azul-bns: #1d5d77;
-  --amarillo-bns: #C6AE51;
+  --amarillo-bns: #b3972a;
 }
 
 *{
