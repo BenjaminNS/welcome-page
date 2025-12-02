@@ -53,7 +53,7 @@ body {
 }
 
 #container-bns{
-  @apply grid pt-10;
+  @apply grid pt-5;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
@@ -89,27 +89,30 @@ body {
     grid-area: proyectos;
   }
   #capturas{
-    @apply flex p-5;
+    @apply flex p-5 flex-wrap justify-center gap-y-2;
     grid-area: capturas;
 
     .captura-elemento{
-      @apply flex flex-1 flex-col text-black px-1 gap-3;
+      @apply flex lg:flex-1 flex-col justify-between text-black px-1 gap-2;
+      max-width: 450px;
 
       &:nth-child( 2n ){
         @apply flex-col;
       }
       &:nth-child( 2n + 1 ){
-        @apply flex-col-reverse;
+        @apply lg:flex-col-reverse;
       }
     }
   }
   #tecnologias{
-    @apply flex justify-center gap-3.5 py-10;
+    @apply flex justify-center gap-3.5 py-10 flex-wrap;
     grid-area: tecnologias;
     /* background-color: var(--amarillo-bns); */
 
     .technology{
-      width: 45px;
+      --base: 45px;
+      width: var(--base);
+      flex: 0 0 var(--base);
       transition: transform .3s;
       cursor: pointer;
 
