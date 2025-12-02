@@ -68,6 +68,19 @@ body {
 
   #nombre{
     grid-area: nombre;
+    .nombre-autor{
+      font-size: clamp(25px, 3vw, 38px);
+      margin-bottom: clamp(5px, .5vw, 30px);
+    }
+
+    .separador{
+      @apply rounded-sm;
+      justify-self: center;
+      background-color: var(--amarillo-bns);
+      width: 750px;
+      max-width: 80vw;
+      height: clamp(1px, .5vw, 3px);
+    }
   }
   #proyecto-estrella{
     grid-area: proyecto-estrella;
