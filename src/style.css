@@ -128,3 +128,27 @@ body {
     /* color: black; */
   }
 }
+.diagonal{
+  /* background-color: inherit; */
+  --dimension: clamp(30px, 7vw, 120px);
+  position: absolute;
+  left: 100%; top: 0%;
+  width: var(--dimension); height: 100%;
+  /* background-color: var(--azul-bns); */
+  /* background-color: purple; */
+  background: url('./triangulo_v2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* mask-image: url(./css_mask.webp); */
+  transform: translate(0%);
+}
+
+@media only screen and (max-width: 48rem) {
+  .diagonal{
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    height: var(--dimension);
+    transform: translate(0%);
+  }
+}
