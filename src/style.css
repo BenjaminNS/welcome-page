@@ -136,7 +136,7 @@ body {
   width: var(--dimension); height: 100%;
   /* background-color: var(--azul-bns); */
   /* background-color: purple; */
-  background: url('./triangulo_v2.png');
+  background: url('./decoracion/triangulo_v2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   /* mask-image: url(./css_mask.webp); */
