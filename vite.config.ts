@@ -15,7 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        pagina1: resolve(__dirname, 'paginas/animation_portfolio/index.html'),
+        pagina1: resolve(__dirname, 'portafolio/animation_portfolio/index.html'),
       }
     }
   }
