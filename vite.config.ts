@@ -50,7 +50,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         animationportfolio: resolve(__dirname, 'portafolio/animation_portfolio/index.html'),
+        'animation_portfolio/script': resolve(__dirname, 'portafolio/animation_portfolio/js/script.js'),
         creditcardpage: resolve(__dirname, 'portafolio/credit_card_page/creditcardpage.html'),
+        'credit_card_page/main': resolve(__dirname, 'portafolio/animation_portfolio/js/script.js'),
         juegocienpersonas: resolve(__dirname, 'portafolio/act_100personasdijeron/act_100personasdijeron.html'),
       }
     }
