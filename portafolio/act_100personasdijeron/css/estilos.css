@@ -1,0 +1,96 @@
+/* CSS Principal */
+/* ⚠ solo imports ⚠ */
+@import './../bootstrap5/bootstrap.min.css';
+@import './estructura.css';
+@import './colores.css';
+@import './scrollbar.css';
+
+input:focus, select:focus, select, input.form-control:focus, .btn {
+
+    outline:none !important;
+
+    outline-width: 0 !important;
+
+    box-shadow: none;
+
+    -moz-box-shadow: none;
+
+    -webkit-box-shadow: none;
+
+}
+
+:root{
+    --espaciadoMarco: 10px;
+}
+*{
+    user-select: none;
+}
+
+.cuadro-3d,
+.cuadro-3d:before,
+.cuadro-3d:after {
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.cuadro-3d {
+    background-color: var(--backcolor-1);
+    border-color: var(--backcolor-1);
+    color: white;
+    position: relative;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.cuadro-3d h1, .cuadro-3d h2, .cuadro-3d h3, .cuadro-3d h4, .cuadro-3d h5, .cuadro-3d h6, .cuadro-3d p{
+    padding: calc(var(--espaciadoMarco) + 1rem);
+    margin: 0;
+    text-align: center;
+}
+
+.cuadro-3d *{
+    z-index: 2;
+}
+.cuadro-3d:before,
+.cuadro-3d:after {
+    content: "";
+    position: absolute;
+    filter: brightness(0.75);
+    border-radius: inherit;
+}
+
+.cuadro-3d:before {
+    background-color: inherit;
+    bottom: -10px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+
+.cuadro-3d:after {
+    border-color: inherit;
+    border-style: solid;
+    top: var(--espaciadoMarco);
+    left: var(--espaciadoMarco);
+    width: calc(100% - calc(var(--espaciadoMarco) * 2));
+    height: calc(100% - calc(var(--espaciadoMarco) * 2));
+    z-index: 1;
+}
+
+[data-text]:empty{
+    display: none !important;
+}
+
+/*MODAL INSTRUCCIONES*/
+#modal-instrucciones .modal-content {
+    background-color: #FFD966 !important;
+    padding-top: 1rem;
+}
+#modal-instrucciones .modal-content:after{
+    display: none;
+}
+
+#modal-instrucciones .modal-footer{
+    border-width: 0;
+}
+

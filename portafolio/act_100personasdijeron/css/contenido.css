@@ -1,0 +1,32 @@
+/* contenido */
+.contenido {
+	position: relative;
+	font-size: 18px;
+	background-color: var(--backcolor-4);
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 0.5rem;
+	margin-left: 24px;
+	margin-right: 27px;
+	margin-bottom: 80px;
+}
+
+/* instrucciones */
+.instrucciones {
+	color: var(--color-7);
+	font-weight: 500;
+	background-color: #e1ede8;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.head-contenido{
+	height: 50px;
+	background-color:var(--color-principal);
+	border-radius: 30px;
+	margin-bottom: 10px;
+	color: #fff;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 400;
+}

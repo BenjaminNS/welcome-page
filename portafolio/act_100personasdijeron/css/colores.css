@@ -1,0 +1,35 @@
+:root {
+	/* fuentes y otros atributos */
+	--color-principal: #ffb12a;
+	--color-secundario: #c1272d;
+	--color-claro: white;
+	--color-obscuro: black;
+	--color-texto: #2e2e2e;
+
+	--color-0: #fb3b44;
+	--color-1: #fec526;
+	--color-2: white;
+	--color-3: white;
+	--color-4: black;
+
+	--backcolor-0: white;
+	--backcolor-1: #fb3b44;
+	--backcolor-2: #fec526;
+	--backcolor-3: #d8252d;
+	--backcolor-4: #dfa300;
+	--backcolor-5: #c4c4c4;
+
+	--fontcolordark: rgb(25, 25, 25);
+	--fontcolorlight: rgb(228, 228, 228);
+
+	--hovercolormenu: #ffb600;
+
+	--backcolor-fondo: #f5f5f5;
+	--backcolor-contenido: white;
+	--backcolor-bien: #7ac17b;
+	--backcolor-mal: #ee5d6a;
+	--backcolor-instruccion: #fce376;
+	--backcolor-instruccionimg: #d4d5d6;
+	--backcolor-hover: #ffb12a;
+	--backcolor-visitado: #d4d5d6;
+}

@@ -1,0 +1,54 @@
+/* ⚠ genera bug en las portadas si se añade */
+/* barra titulo */
+/*Subrayado*/
+/*con text-decoration*/
+#barrasuperior,
+.modal-header,
+.popper-show,
+.modal-show {
+	text-decoration-color: var(--color-6);
+	text-decoration-line: underline;
+	text-decoration-thickness: 0.2em;
+	text-decoration-skip-ink: none;
+}
+#barrasuperior {
+	text-decoration-color: var(--color-5);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	min-height: auto;
+	height: 100dvh;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: var(--color-1);
+}
+.font-size-24{
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	body {
+		/*padding-top: 80px !important;*/
+		overflow-y: auto !important;
+		height: auto !important;
+	}
+}
+@media (max-height: 767px) {
+	body {
+		/*padding-top: 80px !important;*/
+		overflow-y: auto !important;
+		height: auto !important;
+	}
+}
