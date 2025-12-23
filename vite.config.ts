@@ -49,7 +49,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        pagina1: resolve(__dirname, 'portafolio/animation_portfolio/index.html'),
+        animationportfolio: resolve(__dirname, 'portafolio/animation_portfolio/index.html'),
+        creditcardpage: resolve(__dirname, 'portafolio/credit_card_page/creditcardpage.html'),
+        juegocienpersonas: resolve(__dirname, 'portafolio/act_100personasdijeron/act_100personasdijeron.html'),
       }
     }
   }
