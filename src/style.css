@@ -152,3 +152,12 @@ body {
     transform: translate(0%);
   }
 }
+
+.tecnologias-usadas{
+  background-color: goldenrod;
+  color: black;
+  border-radius: .5rem;
+  user-select: none;
+  font-weight: bold;
+  text-decoration: none;
+}
