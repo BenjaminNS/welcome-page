@@ -54,9 +54,10 @@ body {
   grid-template-areas:
     "nombre"
     "proyecto-estrella"
-    "capturas"
     "proyectos"
+    "capturas"
     "tecnologias"
+    "sobre-mi"
     "contacto"
   ;
   /* gap: 1rem; */
@@ -76,6 +77,9 @@ body {
       max-width: 80vw;
       height: clamp(1px, .5vw, 3px);
     }
+  }
+  #sobre-mi{
+    grid-area: sobre-mi;
   }
   #proyecto-estrella{
     grid-area: proyecto-estrella;
