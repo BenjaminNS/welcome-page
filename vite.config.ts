@@ -14,34 +14,36 @@ export default defineConfig({
     {
       name: 'vite-plugin-serve-404',
       configureServer(server) {
-        server.middlewares.use((req, res, next) => {
-          try {
-            const url = (req.url || '').split('?')[0]
-            if (!url) return next()
+        return () => {
+          server.middlewares.use((req, res, next) => {
+            try {
+              const url = (req.url || '').split('?')[0]
+              if (!url) return next()
 
-            // Ignorar peticiones internas de Vite y assets
-            if (url.startsWith('/@vite') || url.startsWith('/__vite') || url.startsWith('/node_modules')) return next()
+              // Ignorar peticiones internas de Vite y assets
+              if (url.startsWith('/@vite') || url.startsWith('/__vite') || url.startsWith('/node_modules') || url.startsWith('/@fs')) return next()
 
-            // Ignorar rutas que terminan con / (van a ser servidas por Vite)
-            if (url.endsWith('/')) return next()
+              // Ignorar rutas que terminan con / (van a ser servidas por Vite)
+              if (url.endsWith('/')) return next()
 
-            // Si la petición tiene extensión, dejar pasar (assets estáticos)
-            if (url.includes('.')) return next()
+              // Si la petición tiene extensión, dejar pasar (assets estáticos)
+              if (url.includes('.')) return next()
 
-            // Para cualquier otra ruta sin extensión, servir 404.html
-            const notFoundPath = resolve(server.config.root, '404.html')
-            if (existsSync(notFoundPath)) {
-              res.statusCode = 404
-              res.setHeader('Content-Type', 'text/html; charset=utf-8')
-              res.end(readFileSync(notFoundPath))
-              return
+              // Para cualquier otra ruta sin extensión, servir 404.html
+              const notFoundPath = resolve(server.config.root, '404.html')
+              if (existsSync(notFoundPath)) {
+                res.statusCode = 404
+                res.setHeader('Content-Type', 'text/html; charset=utf-8')
+                res.end(readFileSync(notFoundPath))
+                return
+              }
+
+              return next()
+            } catch (err) {
+              return next()
             }
-
-            return next()
-          } catch (err) {
-            return next()
-          }
-        })
+          })
+        }
       }
     }
   ]
