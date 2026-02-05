@@ -48,46 +48,46 @@
         </div>
       </section>
 
-      <section id="proyectos" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-stretch p-3 gap-3" style="background: #cab465;">
-        <a href="https://benjaminns.github.io/artist_portfolio/" target="_blank" class="flex flex-1 flex-col rounded-xl overflow-hidden proyecto" style="text-decoration-color: black;">
-          <div class="flex flex-auto">
-            <img class="object-cover w-full" src="./capturas/gifs/animation_portfolio_sc.gif" alt="">
-          </div>
-          <div class="flex flex-col justify-center text-black px-3 py-2" style="background: var(--blanco-bns);">
-            <p>
-              <b>Portafolio de animación:</b> Ejemplo de portafolio de un artista digital
-              <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, GSAP, Bootstrap</section>
-            </p>
-          </div>
+      <section id="proyectos" class="flex p-5">
+        <a class="proyecto-elemento" href="https://benjaminns.github.io/bitacora-de-lo-invisible/" target="_blank">
+          <p class="p-2 text-center">
+            Blog de reseñas para libros, películas y otros pensamientos.
+          </p>
+          <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">Vite, Astro, TailwindCSS</section>
+          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Blog de reseñas</h1>
+          <img class="thumbnail" src="./capturas/estaticas/astro_thumbnail.png" alt="">
+          <img src="external_link_black.png" class="external-link-icon" alt="">
+        </a>
+        <a class="proyecto-elemento" href="https://benjaminns.github.io/artist_portfolio/" target="_blank">
+          <p>
+            Ejemplo de portafolio de un artista digital
+          </p>
+          <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, GSAP, Bootstrap</section>
+          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Portafolio de animación</h1>
+          <img class="thumbnail" src="./capturas/gifs/animation_portfolio_sc.gif" alt="">
+          <img src="external_link_black.png" class="external-link-icon" alt="">
+        </a>
+        <a class="proyecto-elemento" href="https://benjaminns.github.io/credit_card_page/" target="_blank">
+          <p class="p-2 text-center">
+            ¡Personaliza tu tarjeta de crédito con tus datos y los estilos que más te gusten!
+          </p>
+          <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, JavaScript</section>
+          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Tarjeta de crédito personalizada</h1>
+          <img class="thumbnail" src="./capturas/estaticas/creditcard_thumbnail.png" alt="">
+          <img src="external_link_black.png" class="external-link-icon" alt="">
+        </a>
+        <a class="proyecto-elemento" href="https://benjaminns.github.io/act_100personasdijeron/" target="_blank">
+          <p class="p-2 text-center">
+            ¡Obtén la mayor cantidad de puntos respondiendo a una variedad de preguntas con múltiples respuestas!
+          </p>
+          <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, JavaScript, GSAP</section>
+          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Juego de trivia</h1>
+          <img class="thumbnail" src="./capturas/estaticas/familyfeud_thumbnail.png" alt="">
+          <img src="external_link_black.png" class="external-link-icon" alt="">
         </a>
       </section>
 
-      <section id="capturas" class="flex p-5">
-        <a class="captura-elemento" href="https://benjaminns.github.io/bitacora-de-lo-invisible/" target="_blank">
-          <h1 class="border-3 px-4 py-2 text-center text-2xl font-bold" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Blog de reseñas</h1>
-          <p class="p-2 text-center">
-            Blog de reseñas para libros, películas y otros pensamientos.
-            <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">Vite, Astro, TailwindCSS</section>
-          </p>
-          <img class="object-cover rounded-2xl" src="./capturas/estaticas/astro_thumbnail.png" alt="">
-        </a>
-        <a class="captura-elemento" href="https://benjaminns.github.io/credit_card_page/" target="_blank">
-          <h1 class="border-3 px-4 py-2 text-center text-2xl font-bold" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Tarjeta de crédito personalizada</h1>
-          <p class="p-2 text-center">
-            ¡Personaliza tu tarjeta de crédito con tus datos y los estilos que más te gusten!
-            <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, JavaScript</section>
-          </p>
-          <img class="object-cover rounded-2xl" src="./capturas/estaticas/creditcard_thumbnail.png" alt="">
-        </a>
-        <a class="captura-elemento" href="https://benjaminns.github.io/act_100personasdijeron/" target="_blank">
-          <h1 class="border-3 px-4 py-2 text-center text-2xl font-bold" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Juego de trivia</h1>
-          <p class="p-2 text-center">
-            ¡Obtén la mayor cantidad de puntos respondiendo a una variedad de preguntas con múltiples respuestas!
-            <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, JavaScript, GSAP</section>
-          </p>
-          <img class="object-cover rounded-2xl" src="./capturas/estaticas/familyfeud_thumbnail.png" alt="">
-        </a>
-      </section>
+      <section id="capturas" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-stretch p-3 gap-3" style="background: #cab465;"></section>
 
       <section id="tecnologias" class="px-5 py-7">
         <!-- Animarlos 1 por 1 -->

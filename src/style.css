@@ -81,21 +81,24 @@ body {
     grid-area: proyecto-estrella;
   }
   #proyectos{
+    background-color: var(--blanco-bns);
     grid-area: proyectos;
-  }
-  #capturas{
-    @apply flex p-5 flex-wrap justify-center gap-y-2;
-    grid-area: capturas;
+    @apply grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 p-5 justify-center gap-2;
 
-    .captura-elemento{
-      @apply flex lg:flex-1 flex-col justify-between text-black px-1 gap-2;
-      max-width: 450px;
+    .proyecto-elemento{
+      @apply flex flex-col-reverse justify-end text-black px-1 gap-2 relative hover:scale-105 transition-transform;
+      max-width: 600px;
 
-      &:nth-child( 2n ){
-        @apply flex-col;
+      p{
+        @apply flex flex-col text-center justify-center;
+        flex-basis: 50px;
       }
-      &:nth-child( 2n + 1 ){
-        @apply lg:flex-col-reverse;
+      .thumbnail{
+        @apply object-cover rounded-2xl;
+        aspect-ratio: 1.75;
+      }
+      .titulo{
+        @apply border-3 px-4 py-2 text-center text-2xl font-bold bg-white;
       }
     }
   }
