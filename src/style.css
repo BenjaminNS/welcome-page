@@ -124,7 +124,7 @@ body {
   #tecnologias{
     @apply flex justify-center gap-3.5 py-10 flex-wrap;
     grid-area: tecnologias;
-    /* background-color: var(--amarillo-bns); */
+    background-color: #d3b465;
 
     .technology{
       --base: 45px;
