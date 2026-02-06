@@ -130,7 +130,7 @@ body {
       --base: 45px;
       width: var(--base);
       flex: 0 0 var(--base);
-      transition: transform .3s;
+      /* transition: transform .3s; */
       cursor: pointer;
 
       &:hover{

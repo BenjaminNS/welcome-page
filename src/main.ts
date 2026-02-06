@@ -2,8 +2,6 @@ import './style.css'
 import { contenidoPagina, type contenido, type idioma } from './traducciones'
 
 window.addEventListener('load', ()=>{
-    gsap.registerPlugin(ScrollTrigger)
-    const seccionesId = ['#nombre', '#proyecto-estrella', '#capturas', '#tecnologias', '#sobre-mi', '#contacto']
     // IDIOMA
     let params = new URLSearchParams(document.location.search)
     let idioma:null|idioma = params.get("lang")
@@ -17,13 +15,12 @@ window.addEventListener('load', ()=>{
       })
     }
 
-    // gsap.to('#portrait', {
-    //     scrollTrigger: '#portrait',
-    //     x: -200
-    // });
+    // ANIMACIONES
+    gsap.registerPlugin(ScrollTrigger)
+    // const seccionesId = ['#header', '#nombre', '#proyecto-estrella', '#capturas', '#tecnologias', '#sobre-mi', '#contacto']
+    const seccionesId = ['#header', '#nombre', '#proyecto-estrella', '#tecnologias', '#sobre-mi', '#contacto']
 
     let tl_portafolio = gsap.timeline({
-        // delay: 0.5,
         defaults: {
             duration: 1,
             ease: 'none'
@@ -31,49 +28,37 @@ window.addEventListener('load', ()=>{
         smoothChildTiming: true,
         autoRemoveChildren: true,
         onComplete: () => {
-            console.log("finished")
+            // console.log("finished")
         },
     });
 
     seccionesId.forEach((seccion) => {
         tl_portafolio.fromTo(seccion, {
-            // scrollTrigger: {
-            //     trigger: seccion,
-            //     toggleActions: 'restart none none none'
-            // },
+            delay: .5,
             opacity: 0,
             y: 10
         }, 
         {
             scrollTrigger: {
                 trigger: seccion,
-                toggleActions: 'restart none none none'
+                toggleActions: 'play none none none'
             },
             opacity: 1,
             y: 0,
-            duration: .5,
+            duration: .5
         });
     })
-    // tl_portafolio.fromTo('.navbar', {
-    //     opacity: 0,
-    //     y: 30
-    // }, 
-    // {
-    //     opacity: 1,
-    //     y: 0,
-    //     duration: .5,
-    // }).fromTo('.seccion', {
-    //     opacity: 0,
-    //     y: 30
-    // }, 
-    // {
-    //     opacity: 1,
-    //     y: 0,
-    //     stagger: .25,
-    //     duration: .5,
-    // });
 
-    // EMPEZAR LA PAGINA CON LAS PIEZAS OCULTAS APENAS ABRIENDO LA PÁGINA
-    // ANIMAR TEXTOS
-    // ANIMAR POR MEDIO DE SCROLL
+    tl_portafolio.from('.technology', {
+        scrollTrigger: {
+            trigger: '#tecnologias',
+            toggleActions: 'play none none none'
+        },
+        y: -25,
+        delay: .4,
+        opacity: 0,
+        duration: 2,
+        ease: "elastic.out(1,0.4)",
+        stagger: .1
+    })
 })
