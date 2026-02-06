@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,14 +10,14 @@
     <script src="/src/ScrollTrigger.min.js"></script>
     <link href="/src/style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="welcome-page.ico">
-    <title>Benjamin - Portafolio Web</title>
+    <title data-text="titulo_head">Benjamin - Portafolio Web</title>
   </head>
   <body>    
     <header id="header" class="fixed bg-gray-300 w-full flex justify-around items-center z-50">
-      <a href="#proyecto-estrella">Proyectos</a>
-      <a href="#tecnologias">Tecnologías</a>
-      <a href="#sobre-mi">Sobre mi</a>
-      <a href="#contacto">Contacto</a>
+      <a data-text="proyectos_link_txt" href="#proyecto-estrella">Proyectos</a>
+      <a data-text="tecnologias_link_txt" href="#tecnologias">Tecnologías</a>
+      <a data-text="sobremi_link_txt" href="#sobre-mi">Sobre mi</a>
+      <a data-text="contacto_link_txt" href="#contacto">Contacto</a>
 
       <!-- Cambiar dinamicamente dependiendo en el idioma que estes actualmente -->
       <!-- <div>
@@ -30,16 +30,16 @@
     <div id="container-bns" class="">
       <!-- Poner el titulo fixed -->
       <section id="nombre" class="">
-        <h1 class="nombre-autor font-black text-4xl text-center mb-3" style="color: var(--azul-bns);">Benjamín Navarro Salinas - Portafolio</h1>
+        <h1 data-text="titulo_body" class="nombre-autor font-black text-4xl text-center mb-3" style="color: var(--azul-bns);">Benjamín Navarro Salinas - Portafolio</h1>
         <div class="separador mb-5"></div>
       </section>
 
       <section id="proyecto-estrella" class="flex flex-wrap">
         <div class="flex flex-col md:flex-1 flex-auto shrink-0 grow-0 w-full justify-center items-center text-white p-10 text-center" style="background: var(--azul-bns); position: relative;">
-          <h1 class="text-3xl font-black mb-5">
+          <h1 data-text="proyectoestrella_titulo" class="text-3xl font-black mb-5">
             ⭐ Videojuego tipo ajedrez con temática militar
           </h1>
-          <p class="mb-3" style="max-width: 70ch;">
+          <p data-text="proyectoestrella_texto" class="mb-3" style="max-width: 70ch;">
             Videojuego de estrategia táctico por turnos de temática militar.
             <br>
             Eres un comandante y controlas un batallón de unidades cuyo objetivo es <b>destruir todas las unidades de tu oponente</b> ó <b>tomar su Sede Principal.</b>
@@ -48,10 +48,10 @@
           <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">Vite, React, TypeScript, TailwindCSS</section>
 
           <div class="flex gap-x-5">
-            <a class="text-xl hover:text-blue-100 text-blue-300" href="https://github.com/BenjaminNS/AWDS-Rebalanced-v2" target="_blank">
+            <a data-text="repositorio_texto" class="text-xl hover:text-blue-100 text-blue-300" href="https://github.com/BenjaminNS/AWDS-Rebalanced-v2" target="_blank">
               Repositorio👨🏻‍💻
             </a>
-            <a class="text-xl hover:text-blue-100 text-blue-300" href="https://benjaminns.github.io/AWDS-Rebalanced-v2/" target="_blank">
+            <a data-text="juego_texto" class="text-xl hover:text-blue-100 text-blue-300" href="https://benjaminns.github.io/AWDS-Rebalanced-v2/" target="_blank">
               Juego🕹️
             </a>
           </div>
@@ -60,57 +60,53 @@
         </div>
         <div class="flex md:flex-1 flex-auto shrink-0 grow-0 w-full">
           <img class="object-cover" src="./capturas/estaticas/awds_thumbnail.png" alt="">
-          <!-- <img class="object-cover" src="https://theaoi.com/wp-content/uploads/2025/03/Gaming_Finalpiece_SusanYung.jpg"> -->
         </div>
       </section>
 
       <section id="proyectos" class="flex p-5">
         <a class="proyecto-elemento" href="https://benjaminns.github.io/bitacora-de-lo-invisible/" target="_blank">
-          <p class="p-2 text-center">
+          <p data-text="blog_texto" class="p-2 text-center">
             Blog de reseñas para libros, películas y otros pensamientos.
           </p>
           <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">Vite, Astro, TailwindCSS</section>
-          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Blog de reseñas</h1>
+          <h1 data-text="blog_titulo" class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Blog de reseñas</h1>
           <img class="thumbnail" src="./capturas/estaticas/astro_thumbnail.png" alt="">
           <img src="external_link_black.png" class="external-link-icon" alt="">
         </a>
         <a class="proyecto-elemento" href="https://benjaminns.github.io/artist_portfolio/" target="_blank">
-          <p>
+          <p data-text="portafolioanimacion_texto">
             Ejemplo de portafolio de un artista digital
           </p>
           <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, GSAP, Bootstrap</section>
-          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Portafolio de animación</h1>
+          <h1 data-text="portafolioanimacion_titulo" class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Portafolio de animación</h1>
           <img class="thumbnail" src="./capturas/gifs/animation_portfolio_sc.gif" alt="">
           <img src="external_link_black.png" class="external-link-icon" alt="">
         </a>
         <a class="proyecto-elemento" href="https://benjaminns.github.io/credit_card_page/" target="_blank">
-          <p class="p-2 text-center">
+          <p data-text="tarjetacredito_texto" class="p-2 text-center">
             ¡Personaliza tu tarjeta de crédito con tus datos y los estilos que más te gusten!
           </p>
           <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, JavaScript</section>
-          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Tarjeta de crédito personalizada</h1>
+          <h1 data-text="tarjetacredito_titulo" class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Tarjeta de crédito personalizada</h1>
           <img class="thumbnail" src="./capturas/estaticas/creditcard_thumbnail.png" alt="">
           <img src="external_link_black.png" class="external-link-icon" alt="">
         </a>
         <a class="proyecto-elemento" href="https://benjaminns.github.io/act_100personasdijeron/" target="_blank">
-          <p class="p-2 text-center">
+          <p data-text="juegotrivia_texto" class="p-2 text-center">
             ¡Obtén la mayor cantidad de puntos respondiendo a una variedad de preguntas con múltiples respuestas!
           </p>
           <section class="tecnologias-usadas p-2 text-center" title="Tecnologias">HTML, JavaScript, GSAP</section>
-          <h1 class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Juego de trivia</h1>
+          <h1 data-text="juegotrivia_titulo" class="titulo" style="border-color: var(--amarillo-bns); color: var(--azul-bns)">Juego de trivia</h1>
           <img class="thumbnail" src="./capturas/estaticas/familyfeud_thumbnail.png" alt="">
           <img src="external_link_black.png" class="external-link-icon" alt="">
         </a>
       </section>
 
-      <section id="capturas" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-stretch p-3 gap-3" style="background: #cab465;"></section>
+      <!-- <section id="capturas" class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-stretch p-3 gap-3" style="background: #cab465;"></section> -->
 
       <section id="tecnologias" class="px-5 py-7">
-        <!-- Animarlos 1 por 1 -->
-        <!-- <h1>Tecnologías</h1> -->
-
         <div class="flex flex-auto shrink-0 w-full justify-center" style="flex-grow: 1;">
-          <h1 class="text-black text-3xl font-bold text-center">Tecnologías</h1>
+          <h1 data-text="tecnologias_link_txt" class="text-black text-3xl font-bold text-center">Tecnologías</h1>
         </div>
         
         <img class="technology" src="/technologies/HTML.svg" alt="HTML" title="HTML">
@@ -132,13 +128,12 @@
 
       <section id="sobre-mi" class="flex flex-wrap justify-center my-2 gap-2">
         <div class="w-full md:w-auto flex justify-center">
-          <!-- <img class="object-cover rounded-xl" src="perfil.jpeg" style="max-width: 400px;" alt=""> -->
           <img class="object-cover rounded-xl" src="perfil2.jpg" style="max-width: 230px;" alt="">
         </div>
         <div class="flex justify-center items-center p-3" style="max-width: 40rem;">
           <div style="max-width: 40rem;">
-            <p style="font-size: 1.15em; font-weight: bold;">¡Hola! ¡Soy Benjamín!</p>
-            <p>Soy un Front End Developer con 7 años de experiencia. Estoy especializado en desarrollo front-end con HTML5, CSS3, JavaScript (ES6), Typescript y  Tailwind.
+            <p data-text="sobremi_titulo" style="font-size: 1.15em; font-weight: bold;">¡Hola! ¡Soy Benjamín!</p>
+            <p data-text="sobremi_texto">Soy un Front End Developer con 7 años de experiencia. Estoy especializado en desarrollo front-end con HTML5, CSS3, JavaScript (ES6), Typescript y  Tailwind.
             Actualmente estoy ampliando conocimientos en React, Astro, .NET, Node y PHP.</p>
           </div>
         </div>
@@ -146,7 +141,7 @@
 
       <section id="contacto" class="text-white px-3 py-5">
         <h1 class="text-3xl mb-5">Contacto</h1>
-        <p>Correo electrónico: <span class="ms-3">benjaminns_l@outlook.es</span></p>
+        <p><b data-text="correoelectronico_txt">Correo electrónico:</b> <span class="ms-3">benjaminns_l@outlook.es</span></p>
       </section>
 
     </div>
