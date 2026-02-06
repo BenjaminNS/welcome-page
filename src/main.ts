@@ -1,8 +1,21 @@
 import './style.css'
+import { contenidoPagina, type contenido, type idioma } from './traducciones'
 
 window.addEventListener('load', ()=>{
     gsap.registerPlugin(ScrollTrigger)
     const seccionesId = ['#nombre', '#proyecto-estrella', '#capturas', '#tecnologias', '#sobre-mi', '#contacto']
+    // IDIOMA
+    let params = new URLSearchParams(document.location.search)
+    let idioma:null|idioma = params.get("lang")
+    
+    if( idioma === 'EN' ){
+      document.querySelectorAll('[data-text]').forEach(textoNode =>{
+        const nombreTexto = textoNode.getAttribute('data-text')
+        if( nombreTexto ){
+          textoNode.innerHTML = contenidoPagina[idioma][nombreTexto]
+        }
+      })
+    }
 
     // gsap.to('#portrait', {
     //     scrollTrigger: '#portrait',
