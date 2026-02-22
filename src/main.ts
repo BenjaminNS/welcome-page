@@ -1,14 +1,19 @@
 import './style.css'
-import { contenidoPagina, type contenido, type idioma } from './traducciones'
+import { contenidoPagina, type idioma, type categoriaTextoContenido } from './traducciones'
+// import { gsap } from "gsap";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener('load', ()=>{
     // IDIOMA
     let params = new URLSearchParams(document.location.search)
-    let idioma:null|idioma = params.get("lang")
+    let idioma:null|idioma|string = params.get("lang")
     
     if( idioma === 'EN' ){
       document.querySelectorAll('[data-text]').forEach(textoNode =>{
-        const nombreTexto = textoNode.getAttribute('data-text')
+        const nombreTexto = textoNode.getAttribute('data-text') as categoriaTextoContenido
         if( nombreTexto ){
           textoNode.innerHTML = contenidoPagina[idioma][nombreTexto]
         }

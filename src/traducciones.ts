@@ -1,26 +1,6 @@
-export type contenido = {
-  titulo_head: string
-  proyectos_link_txt: string
-  tecnologias_link_txt: string
-  sobremi_link_txt: string
-  contacto_link_txt: string
-  titulo_body: string
-  proyectoestrella_titulo: string
-  proyectoestrella_texto: string
-  repositorio_texto: string
-  juego_texto: string
-  blog_texto: string
-  blog_titulo: string
-  portafolioanimacion_texto: string
-  portafolioanimacion_titulo: string
-  tarjetacredito_texto: string
-  tarjetacredito_titulo: string
-  juegotrivia_texto: string
-  juegotrivia_titulo: string
-  sobremi_titulo: string
-  sobremi_texto: string
-  correoelectronico_txt: string
-}
+export type categoriaTextoContenido = 'titulo_head'|'proyectos_link_txt'|'tecnologias_link_txt'|'sobremi_link_txt'|'contacto_link_txt'|'titulo_body'|'proyectoestrella_titulo'|'proyectoestrella_texto'|'repositorio_texto'|'juego_texto'|'blog_texto'|'blog_titulo'|'portafolioanimacion_texto'|'portafolioanimacion_titulo'|'tarjetacredito_texto'|'tarjetacredito_titulo'|'juegotrivia_texto'|'juegotrivia_titulo'|'sobremi_titulo'|'sobremi_texto'|'correoelectronico_txt'
+
+export type contenido = Record<categoriaTextoContenido, string>
 
 // Los nombres de las tecnologías no requieren traducción
 export type idioma='ES'|'EN'
