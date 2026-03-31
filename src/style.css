@@ -127,14 +127,21 @@ body {
     background-color: #d3b465;
 
     .technology{
-      --base: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      --base: 90px;
       width: var(--base);
       flex: 0 0 var(--base);
-      /* transition: transform .3s; */
-      cursor: pointer;
+      user-select: none;
 
-      &:hover{
-        transform: scale(1.2);
+      img{
+        /* transition: transform .3s; */
+        width: 40px;
+      }
+
+      p{
+        font-weight: 500;
       }
     }
   }
