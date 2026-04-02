@@ -20,6 +20,12 @@ window.addEventListener('load', ()=>{
       })
     }
 
+    if( idioma != null ){
+      document.querySelector(`.btn-idioma[lang="${idioma}"]`)?.remove()
+    } else{
+      document.querySelector(`.btn-idioma[lang="ES"]`)?.remove()
+    }
+
     // ANIMACIONES
     gsap.registerPlugin(ScrollTrigger)
     // const seccionesId = ['#header', '#nombre', '#proyecto-estrella', '#capturas', '#tecnologias', '#sobre-mi', '#contacto']
