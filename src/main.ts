@@ -37,10 +37,7 @@ window.addEventListener('load', ()=>{
             ease: 'none'
         },
         smoothChildTiming: true,
-        autoRemoveChildren: true,
-        onComplete: () => {
-            // console.log("finished")
-        },
+        autoRemoveChildren: true
     });
 
     seccionesId.forEach((seccion) => {
