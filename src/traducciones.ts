@@ -26,7 +26,7 @@ export const contenidoPagina:Record<idioma, contenido> = {
     juegotrivia_titulo: 'Juego de trivia',
     juegotrivia_texto: '¡Obtén la mayor cantidad de puntos respondiendo a una variedad de preguntas con múltiples respuestas!',
     sobremi_titulo: '¡Hola! ¡Soy Benjamín!',
-    sobremi_texto: 'Soy un Front End Developer con 7 años de experiencia. Estoy especializado en desarrollo front-end con HTML5, CSS3, JavaScript (ES6), Typescript y Tailwind. Actualmente estoy ampliando conocimientos en React, Astro, .NET, Node y PHP.',
+    sobremi_texto: 'Soy un Programador Full Stack Developer con más 7 años de experiencia. <br> Desarrollo de Front End con HTML5, CSS3, JavaScript (ES6), React Typescript y Tailwind. Desarrollo de Back End con Node, PHP, C#, MySQL y PostgreSQL.',
     correoelectronico_txt: 'Correo electrónico:',
   },
   'EN': {
@@ -49,7 +49,7 @@ export const contenidoPagina:Record<idioma, contenido> = {
     juegotrivia_titulo: 'Trivia Game',
     juegotrivia_texto: 'Get the highest amount of points and answering a variety of trivia!',
     sobremi_titulo: 'Hi! I\'m Benjamín!',
-    sobremi_texto: 'I\'m a Front End Developer with 7 years of experience. Specialized in HTML5, CSS3, JavaScript (ES6), Typescript y Tailwind. Currently learning React, Astro, .NET, Node and PHP.',
+    sobremi_texto: 'I\'m a Full Stack Developer with over 7 years of experience building interactive, multilingual, and responsive digital content for Education, Logistics, Food and Pharmaceutical sectors. Front End Development with HTML5, CSS3, JavaScript (ES6), React, Typescript and Tailwind. Back End Development with Node, PHP, C#, MySQL and PostgreSQL.',
     correoelectronico_txt: 'E-mail:',
   }
 }
