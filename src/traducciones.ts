@@ -1,4 +1,4 @@
-export type categoriaTextoContenido = 'titulo_head'|'proyectos_link_txt'|'tecnologias_link_txt'|'sobremi_link_txt'|'contacto_link_txt'|'titulo_body'|'proyectoestrella_titulo'|'proyectoestrella_texto'|'repositorio_texto'|'juego_texto'|'blog_texto'|'blog_titulo'|'portafolioanimacion_texto'|'portafolioanimacion_titulo'|'tarjetacredito_texto'|'tarjetacredito_titulo'|'juegotrivia_texto'|'juegotrivia_titulo'|'sobremi_titulo'|'sobremi_texto'|'correoelectronico_txt'
+export type categoriaTextoContenido = 'titulo_head'|'proyectos_link_txt'|'tecnologias_link_txt'|'sobremi_link_txt'|'contacto_link_txt'|'titulo_body'|'proyectoestrella_titulo'|'proyectoestrella_texto'|'repositorio_texto'|'juego_texto'|'blog_texto'|'blog_titulo'|'portafolioanimacion_texto'|'portafolioanimacion_titulo'|'tarjetacredito_texto'|'tarjetacredito_titulo'|'juegotrivia_texto'|'juegotrivia_titulo'|'sobremi_titulo'|'sobremi_texto'|'correoelectronico_txt'|'correCopiado'
 
 export type contenido = Record<categoriaTextoContenido, string>
 
@@ -28,6 +28,7 @@ export const contenidoPagina:Record<idioma, contenido> = {
     sobremi_titulo: '¡Hola! ¡Soy Benjamín!',
     sobremi_texto: 'Soy un Programador Full Stack Developer con más 7 años de experiencia. <br> Desarrollo de Front End con HTML5, CSS3, JavaScript (ES6), React Typescript y Tailwind. Desarrollo de Back End con Node, PHP, C#, MySQL y PostgreSQL.',
     correoelectronico_txt: 'Correo electrónico:',
+    correCopiado: 'Correo copiado a portapapeles.'
   },
   'EN': {
     titulo_head: 'Benjamin - Portfolio Web',
@@ -49,7 +50,8 @@ export const contenidoPagina:Record<idioma, contenido> = {
     juegotrivia_titulo: 'Trivia Game',
     juegotrivia_texto: 'Get the highest amount of points and answering a variety of trivia!',
     sobremi_titulo: 'Hi! I\'m Benjamín!',
-    sobremi_texto: 'I\'m a Full Stack Developer with over 7 years of experience building interactive, multilingual, and responsive digital content for Education, Logistics, Food and Pharmaceutical sectors. Front End Development with HTML5, CSS3, JavaScript (ES6), React, Typescript and Tailwind. Back End Development with Node, PHP, C#, MySQL and PostgreSQL.',
+    sobremi_texto: 'I\'m a Full Stack Developer with over 7 years of experience building interactive, multilingual, and responsive digital content for Education, Logistics, Food and Pharmaceutical sectors. <br> Front End Development with HTML5, CSS3, JavaScript (ES6), React, Typescript and Tailwind. <br> Back End Development with Node, PHP, C#, MySQL and PostgreSQL.',
     correoelectronico_txt: 'E-mail:',
+    correCopiado: 'E-mail copied to the clipboard.'
   }
 }

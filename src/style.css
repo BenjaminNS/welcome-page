@@ -195,3 +195,13 @@ body {
   top: 10px; right: 10px;
   width: 25px; height: auto;
 }
+
+#notificacion{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+  @apply p-3 text-2xl font-bold;
+  max-width: 50ch;
+  transform: translate(0, 100%);
+}

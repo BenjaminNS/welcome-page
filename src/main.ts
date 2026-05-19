@@ -31,6 +31,16 @@ window.addEventListener('load', ()=>{
     // const seccionesId = ['#header', '#nombre', '#proyecto-estrella', '#capturas', '#tecnologias', '#sobre-mi', '#contacto']
     const seccionesId = ['#header', '#nombre', '#proyecto-estrella', '#tecnologias', '#sobre-mi', '#contacto']
 
+    let tl_notificacion = gsap.timeline({
+        defaults: {
+            duration: 1,
+            ease: 'none'
+        },
+        smoothChildTiming: true,
+        autoRemoveChildren: true
+    });
+    window.tl_notificacion = tl_notificacion
+
     let tl_portafolio = gsap.timeline({
         defaults: {
             duration: 1,
@@ -68,5 +78,26 @@ window.addEventListener('load', ()=>{
         duration: 2,
         ease: "elastic.out(1,0.4)",
         stagger: .1
+    })
+
+    document.querySelector('#email-copy')?.addEventListener('click', ()=>{
+      navigator.clipboard.writeText('benjaminns_l@outlook.es');
+      // debugger
+
+      if(!tl_notificacion.isActive()){
+        tl_notificacion.restart()
+        tl_notificacion.pause()
+      }
+      
+      tl_notificacion.to('#notificacion', {
+        transform: 'translate(0%, 0%)',
+        duration: .3
+      }).to('#notificacion', {
+        delay: 1.8,
+        duration: .5,
+        transform: 'translate(0%, 100%)',
+      })
+      
+      tl_notificacion.play()
     })
 })
