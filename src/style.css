@@ -126,7 +126,13 @@ body {
     }
   }
   #tecnologias{
-    @apply flex justify-center gap-3.5 py-10 flex-wrap;
+    @apply py-10;
+
+    #lista-tecnologias{
+      @apply flex justify-center gap-3.5 flex-wrap m-auto;
+      max-width: 900px;
+    }
+
     grid-area: tecnologias;
     background-color: #d3b465;
 
