@@ -39,7 +39,6 @@ window.addEventListener('load', ()=>{
         smoothChildTiming: true,
         autoRemoveChildren: true
     });
-    window.tl_notificacion = tl_notificacion
 
     let tl_portafolio = gsap.timeline({
         defaults: {
